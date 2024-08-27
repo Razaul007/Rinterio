@@ -22,13 +22,14 @@
 </head>
 
 <body class="font-manrope">
-    <header >
-        <nav class="md:container mx-auto">
+    <header  class="">
+        <!-- Navbar Section -->
+        <nav class="md:container md:mx-auto">
             <div class="navbar bg-base-100">
-                <div class="navbar-start">
+                <div class=" flex flex-row-reverse">
                     <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden  ">
+                            <svg xmlns="http://www.w3.org/2000/svg" class=" h-5 w-5" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M4 6h16M4 12h8m-8 6h16" />
@@ -43,10 +44,12 @@
                             <li><a>Contact Us</a></li>
                         </ul>
                     </div>
-                  
-                    <a class="btn btn-ghost text-3xl font-extrabold">
-                        <i class="fa-solid fa-arrow-right bg-[#ABEF5F] -rotate-45 rounded-full"></i>
-                        Rinterio</a>
+                
+                    <div>
+                        <a class="btn btn-ghost md:text-3xl md:font-extrabold">
+                            <i class="fa-solid fa-arrow-right bg-[#ABEF5F] -rotate-45 rounded-full"></i>
+                            <span class=" text-2xl bold">Rinterio</span></a>
+                    </div>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
@@ -57,13 +60,22 @@
                         <li><a>Contact Us</a></li>
                     </ul>
                 </div>
-                <div class="navbar-end flex gap-2.5">
+                <div class="navbar-end flex hidden lg:flex gap-2.5">
                     <i class="fa-solid fa-magnifying-glass"></i>
                     <i class="fa-solid fa-cart-shopping"></i>
                     <a class="btn bg-[#ABEF5F] p-3 rounded-3xl">Book Consult <i class="fa-solid fa-arrow-right bg-black text-white -rotate-45 rounded-full p-1"></i></a>
                 </div>
             </div>
         </nav>
+        <!-- Banner Section -->
+        <section class="md:container md:mx-auto">
+           <div class="grid grid-cols-1 gap-4 place-items-center">
+              <img src="./assets/banner.png" alt="" srcset="">
+              <h1 class="text-3xl font-extrabold text-center ">A barn house of this design has a <br > striking appearance</h1>
+              <p class=" text-center">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br> accents, and large windows that flood the space with natural light.</p>
+              <a class="btn bg-[#ABEF5F] p-3 rounded-3xl">View Details <i class="fa-solid fa-arrow-right bg-lime-400 text-white -rotate-45 rounded-full p-1"></i></a>
+           </div>
+        </section>
     </header>
     <main></main>
     <footer></footer>
